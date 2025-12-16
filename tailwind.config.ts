@@ -3,12 +3,13 @@ import type { Config } from "tailwindcss";
 const config = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
-    "./constants/**/*.{ts,tsx}",
-  ],
+  "./pages/**/*.{ts,tsx}",
+  "./components/**/*.{ts,tsx}",
+  "./app/**/*.{ts,tsx}",
+  "./src/**/*.{ts,tsx}",
+  "./constants/**/*.{ts,tsx}",
+],
+
   prefix: "",
   theme: {
     container: {
@@ -19,6 +20,20 @@ const config = {
       },
     },
     extend: {
+      /* ✅ ADD THIS BLOCK */
+      fontSize: {
+        10: ["10px", "14px"],
+        12: ["12px", "16px"],
+        14: ["14px", "20px"],
+        16: ["16px", "24px"],
+        18: ["18px", "22px"],
+        20: ["20px", "24px"],
+        24: ["24px", "30px"],
+        26: ["26px", "32px"],
+        30: ["30px", "38px"],
+        36: ["36px", "44px"],
+      },
+
       colors: {
         fill: {
           1: "rgba(255, 255, 255, 0.10)",
