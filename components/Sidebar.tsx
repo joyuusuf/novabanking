@@ -55,7 +55,9 @@ const pathname = usePathname();
                     </Link>
                 )
             })}
+            USER
         </nav>
+        FOOTER
     </section>
   )
 }
